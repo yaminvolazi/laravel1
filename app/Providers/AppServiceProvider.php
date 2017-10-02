@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace CITYSHOP\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

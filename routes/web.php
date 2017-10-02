@@ -18,3 +18,11 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/stores', function () {
+    return view('stores');
+});
+
+Route::get('/stores/{name}', function ($name) {
+    return view('store',['name' => $name]);
+});
