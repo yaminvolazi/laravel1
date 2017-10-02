@@ -15,14 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/home', 'HomeController@get_produits');
 
 Route::get('/stores', function () {
     return view('stores');
 });
 
-Route::get('/stores/{name}', function ($name) {
-    return view('store',['name' => $name]);
-});
+Route::get('/stores/{name}', 'StoreController@get_store');
