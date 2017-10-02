@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@get_produits');
 
-Route::get('/stores', function () {
-    return view('stores');
-});
+Route::get('/stores', 'StoreController@get_stores');
 
 Route::get('/stores/{name}', 'StoreController@get_store');
+
+Route::get('/stores/add_store/data', 'StoreController@add_store');
