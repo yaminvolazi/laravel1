@@ -22,3 +22,7 @@ Route::get('/stores', 'StoreController@get_stores');
 Route::get('/stores/{name}', 'StoreController@get_store');
 
 Route::get('/stores/add_store/data', 'StoreController@add_store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
