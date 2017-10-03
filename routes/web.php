@@ -26,3 +26,5 @@ Route::get('/stores/add_store/data', 'StoreController@add_store');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/categories', 'CategorieController@get_categories');
