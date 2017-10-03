@@ -17,11 +17,23 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@get_produits');
 
-Route::get('/stores', 'StoreController@get_stores');
+/*-------------------- Store ------------------ */
 
-Route::get('/stores/{name}', 'StoreController@get_store');
+Route::get('/stores', 'StoreController@index');
 
-Route::get('/stores/add_store/data', 'StoreController@add_store');
+Route::get('/stores/{name}', 'StoreController@index');
+
+Route::get('/stores/create/form', 'StoreController@create_store');
+
+Route::post('/stores', 'StoreController@save_store');
+
+Route::post('/stores/{name}/edite/form', 'StoreController@edit_store');
+
+Route::put('/stores/{name}', 'StoreController@update_store');
+
+Route::delete('/stores/{name}', 'StoreController@delete_store');
+
+/*-------------------- ... ------------------ */
 
 Auth::routes();
 

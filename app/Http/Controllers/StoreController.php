@@ -7,16 +7,54 @@ use CITYSHOP\Store;
 
 class StoreController extends Controller
 {
-    public function get_store($name)
+    
+    // Liste of stores
+    public function index($name=null)
     {
-        return view('store',['name' => $name]);
+        if($name!=null){
+            return view('store',['name' => $name]);
+        }else{
+            $stores = Store::all();
+            return view('stores',['stores' => $stores]);            
+        }
+
     }
 
-    public function get_stores()
+    // Store creation form
+    public function create_store()
     {
-        $stores = Store::all();
-        return view('stores',['stores' => $stores]);
+
+    } 
+
+    // Save store
+    public function save_store()
+    {
+
     }
+
+    // Get store data and put themes into form
+    public function edit_store()
+    {
+
+    }
+
+    // Update store
+    public function update_store()
+    {
+    
+    }
+
+    // Delete Store
+    public function delete_store()
+    {
+    
+    }
+
+
+
+
+
+
 
     public function add_store()
     {
