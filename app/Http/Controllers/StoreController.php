@@ -27,7 +27,7 @@ class StoreController extends Controller
     public function index_admin($name=null)
     {
         if($name!=null){
-            return view('store',['name' => $name]);
+            return view('admin.store',['name' => $name]);
         }else{
             $stores = Store::all();
             return view('admin.stores',['stores' => $stores]);            

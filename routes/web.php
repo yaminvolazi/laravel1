@@ -29,15 +29,17 @@ Route::get('/stores/{name}', 'StoreController@index');
 
 Route::get('/admin/stores', 'StoreController@index_admin');
 
-Route::get('/stores/create/form', 'StoreController@create_store');
+Route::get('/admin/stores/{name}', 'StoreController@index_admin');
 
-Route::post('/stores', 'StoreController@save_store');
+Route::get('/admin/stores/create/form', 'StoreController@create_store');
 
-Route::post('/stores/{name}/edite/form', 'StoreController@edit_store');
+Route::post('/admin/stores', 'StoreController@save_store');
 
-Route::put('/stores/{name}', 'StoreController@update_store');
+Route::post('/admin/stores/{name}/edite/form', 'StoreController@edit_store');
 
-Route::delete('/stores/{name}', 'StoreController@delete_store');
+Route::put('/admin/stores/{name}', 'StoreController@update_store');
+
+Route::delete('/admin/stores/{name}', 'StoreController@delete_store');
 
 /*-------------------- ... ------------------ */
 
