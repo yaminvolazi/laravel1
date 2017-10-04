@@ -42,9 +42,24 @@ class StoreController extends Controller
     } 
 
     // Save store
-    public function save_store()
+    public function save_store(Request $request)
     {
 
+        $store = new Store();
+
+        $store->name = $request->input('name');
+        $store->address = $request->input('address');
+        $store->tels = $request->input('tels');
+        $store->emails = $request->input('emails');
+        $store->website = $request->input('website');
+        $store->avatar = $request->input('avatar');
+        $store->cover = $request->input('cover');
+        $store->description = $request->input('description');
+
+        $store->save();
+
+        $stores = Store::all();
+        return view('admin.stores',['stores' => $stores]);
     }
 
     // Get store data and put themes into form

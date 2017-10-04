@@ -60,3 +60,6 @@ img {
     margin-top: 8px;
     margin-bottom: 0px;
 }
+#admin_input input{
+    font-size: 15px;
+}
