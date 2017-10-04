@@ -19,9 +19,15 @@ Route::get('/home', 'HomeController@get_produits');
 
 /*-------------------- Store ------------------ */
 
+// CITYSHOP
+
 Route::get('/stores', 'StoreController@index');
 
 Route::get('/stores/{name}', 'StoreController@index');
+
+// CITYSHOP ADMIN
+
+Route::get('/admin/stores', 'StoreController@index_admin');
 
 Route::get('/stores/create/form', 'StoreController@create_store');
 

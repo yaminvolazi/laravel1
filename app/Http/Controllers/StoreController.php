@@ -7,7 +7,8 @@ use CITYSHOP\Store;
 
 class StoreController extends Controller
 {
-    
+    /*------------------ CITYSHOP -------------------*/
+
     // Liste of stores
     public function index($name=null)
     {
@@ -16,6 +17,20 @@ class StoreController extends Controller
         }else{
             $stores = Store::all();
             return view('stores',['stores' => $stores]);            
+        }
+
+    }
+
+    /*--------------- CITYSHOP ADMIN -----------------*/
+
+    // Liste of stores
+    public function index_admin($name=null)
+    {
+        if($name!=null){
+            return view('store',['name' => $name]);
+        }else{
+            $stores = Store::all();
+            return view('admin.stores',['stores' => $stores]);            
         }
 
     }
