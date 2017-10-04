@@ -63,3 +63,7 @@ img {
 #admin_input input{
     font-size: 15px;
 }
+.admin_datatable{
+    margin-top: -5px;
+    margin-bottom: -4px;
+}

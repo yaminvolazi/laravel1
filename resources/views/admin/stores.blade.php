@@ -31,16 +31,18 @@
 				</tr>
 			</tfoot>
 			<tbody>
+            <?php $id=1 ?>
 				@foreach($stores as $store)
 				<tr>
-					<td>id</td>
+					<td>{{$id++}}</td>
 					<td>{{$store->name}}</td>
 					<td>{{$store->tels}}</td>
 					<td>{{$store->emails}}</td>
-					<td>
-						<div class="btn-group" role="group" aria-label="Basic example">
+					<td align="center">
+						<div class="btn-group admin_datatable" role="group" aria-label="Basic example">
 							<a href="#" class="btn btn-secondary btn-warning btn-sm">Edit</a>
-							<a href="#" class="btn btn-secondary btn-danger btn-sm">Delete</a>
+                            <a href="#" class="btn btn-secondary btn-danger btn-sm">Delete</a>
+                            <a href="#" class="btn btn-secondary btn-info btn-sm">Show</a>
 						</div>
 					</td>
 				</tr>
