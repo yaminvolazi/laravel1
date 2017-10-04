@@ -10,6 +10,7 @@
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
 
+    <link href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
@@ -47,6 +48,16 @@
     <script src="{{ asset('assets/js/jquery-slim.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- data table -->
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
 
 </body>
 </html>
