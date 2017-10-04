@@ -38,7 +38,7 @@ class StoreController extends Controller
     // Store creation form
     public function create_store()
     {
-
+        return view('admin.create_store');
     } 
 
     // Save store

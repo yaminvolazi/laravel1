@@ -52,3 +52,11 @@ img {
     border: none;
     outline: none;
 }
+.add-new {
+    float: right;
+}
+.card-header > h4 { 
+    display: inline-block; 
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
