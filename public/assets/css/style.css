@@ -78,9 +78,21 @@ img {
     border-color: #dfdfdf;
     border-left: solid 2px #2196F3;
     border-radius: 0px;
+    border-bottom: 1px solid rgb(216, 216, 216);
 }
 .list-group-item:first-child {
     border-radius: 0px;
+    border-top: 0px;
+}
+
+.list-group-item {
+    border: 0px solid rgba(0,0,0,.125);
+    border-top: 1px solid rgb(216, 216, 216);
+}
+
+.badge-secondary {
+    color: #44412d;
+    background-color: #f9dc00;
 }
 
 /* end ad;in */

@@ -40,7 +40,7 @@
 					<td>{{$store->emails}}</td>
 					<td align="center">
 						<div class="btn-group admin_datatable" role="group" aria-label="Basic example">
-							<a href="#" class="btn btn-secondary btn-warning btn-sm">Edit</a>
+							<a href="{{ url('admin/stores/'.$store->name) }}" class="btn btn-secondary btn-warning btn-sm">Edit</a>
                             <a href="#" class="btn btn-secondary btn-danger btn-sm">Delete</a>
                             <a href="#" class="btn btn-secondary btn-info btn-sm">Details</a>
 						</div>
